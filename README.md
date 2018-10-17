@@ -3,7 +3,7 @@ ml_app
 
 ## Django memo
 
-##### create
+##### create project
 
 ```
 $ sudo docker-compose run ml_app django-admin.py startproject ml_app .
@@ -22,4 +22,11 @@ $ docker-compose up
 ```
 $ docker exec -it  ml_app_ml_app_1 /bin/bash
 $ python manage.py createsuperuser
+```
+
+
+##### create app
+
+```
+$ python manage.py startapp <app_name>
 ```
