@@ -1,19 +1,35 @@
 {% extends "base.html" %}
 
 {% block title %}
-Service
+Vocabulary
 {% endblock %}
 
 {% block metadata %}
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'events/events.css' %}">
-
-
+<link rel="stylesheet" type="text/css" href="{% static 'difficulty_analysis/index.css' %}">
 {% endblock %}
 
 
 {% block content %}
+    <main class="content">
 
-    content
-
+        <table>
+            <thead>
+            <tr>
+                <th>単語</th>
+                <th>難易度</th>
+                <th>作成日</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for vocabulary in vocabularies %}
+                    <tr>
+                    <td>{{ vocabulary.word }}</td>
+                    <td>{{ vocabulary.level }}</td>
+                    <td>{{ vocabulary.created_at }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
 {% endblock %}

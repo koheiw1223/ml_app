@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+Difficulty Analysis
+{% endblock %}
+
+{% block metadata %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'difficulty_analysis/index.css' %}">
+
+
+{% endblock %}
+
+
+{% block content %}
+    <main class="content">
+
+        <a class="btn" href="{% url 'difficulty_analysis:vocabularies' %}">語彙/単語</a>
+
+    </main>
+{% endblock %}
