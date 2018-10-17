@@ -1,0 +1,7 @@
+db.sqlite3
+media
+__pycache__
+migrations
+homepage.env
+cert
+.idea

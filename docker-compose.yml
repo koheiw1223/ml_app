@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ml_app:
+    build: .
+    command: python manage.py runserver 0:80
+    working_dir: /code/
+    ports:
+     - "8000:80"
+    volumes:
+     - .:/code
