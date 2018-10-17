@@ -1,0 +1,148 @@
+.content .tag-area {
+    display: flex;
+    padding-top: 60px;
+    width: 1120px;
+    margin: 0 auto 60px;
+}
+
+.content .tag-area .title {
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #393939;
+}
+
+.content .tag-area .tag-list {
+    display: flex;
+    align-items: center;
+}
+
+.content .tag-area .tag-list li {
+    position: relative;
+    margin-right: 50px;
+}
+
+.content .tag-area .tag-list li::after {
+    content: "/";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+}
+
+.content .tag-area .tag-list li:last-child::after {
+    display: none;
+}
+
+.content .tag-area .tag-list li.current {
+    padding: 0 10px;
+    border-radius: 10px;
+    background: #393939;
+}
+
+.content .tag-area .tag-list li.current a {
+    color: #fff;
+}
+
+.content .tag-area .tag-list a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #393939;
+}
+
+
+
+.content .circle-thumb-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.content .circle-thumb-list li {
+    position: relative;
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content .circle-thumb-list .circle-thumb-list-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+.content .news-card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .news-card-list-item {
+    width: 360px;
+    margin: 0 20px 40px 0;
+}
+
+.content .news-card-list-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.content .news-card-list-item:last-child {
+    margin-right: 0;
+}
+
+.content .news-card-list-item .img-wrap {
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content .news-card-list-item .img-wrap img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.content .news-card-list-item .description {
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px #979797;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.content .news-card-list-item .description {
+    color: #393939;
+}
+
+.content .news-card-list-item .date {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.content .news-card-list-item .news-title {
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.content .news-card-list-item .sub-title {
+    font-size: 16px;
+}

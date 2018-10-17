@@ -1,0 +1,34 @@
+.header .main-visual {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding-left: 20px;
+    font-size: 80px;
+    color: #FFEC00;
+    background: #0097FF;
+    box-sizing: border-box;
+}
+
+.header .nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.header .nav-section .gnav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 875px;
+}
+
+.header .nav-section .gnav-list a {
+    line-height: 1.0;
+    font-size: 30px;
+    color: #0097FF;
+}
