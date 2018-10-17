@@ -16,6 +16,7 @@ Sentences
         <table>
             <thead>
             <tr>
+                <th>タイトル</th>
                 <th>テキスト</th>
                 <th>メモ</th>
                 <th>作成日</th>
@@ -24,8 +25,9 @@ Sentences
             <tbody>
                 {% for sentence in sentences %}
                     <tr>
-                    <td>{{ sentence.text }}</td>
-                    <td>{{ sentence.memo }}</td>
+                    <td>{{ sentence.title |truncatechars:20 }}</td>
+                    <td>{{ sentence.text |truncatechars:20 }}</td>
+                    <td>{{ sentence.memo |truncatechars:20 }}</td>
                     <td>{{ sentence.created_at }}</td>
                     </tr>
                 {% endfor %}

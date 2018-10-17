@@ -15,3 +15,4 @@ def sentence_index(request):
         'sentences': Sentence.objects.filter(used_status=True),
     }
     return render(request, "difficulty_analysis/sentence_index.html", d)
+

@@ -15,13 +15,27 @@ Difficulty Analysis
 {% block content %}
     <main class="content">
 
+    <ul>
         <li>
             <a class="btn" href="{% url 'difficulty_analysis:vocabularies' %}">語彙/単語 一覧</a>
         </li>
         <li>
             <a class="btn" href="{% url 'difficulty_analysis:sentences' %}">文章 一覧</a>
         </li>
+    </ul>
 
+    <ul>
+        <li>
+            ①一般的に「慶應受かるならこれくらいの単語量は必要だろう」と考えられているボキャブラリーセットを用意する ⇒ これはターゲットとかでよい
+        </li>
+        <li>
+            ②そのボキャブラリーセットをもとに慶應の過去問と照合して、シンクロ率の平均値、誤差、標準偏差を導く
+        </li>
+        <li>
+            ③Japan TimesやNew York Times等の慶應の問題として引用されそうな記事と①で用意したボキャブラリーセットを照合させてシンクロ率を②で導き出した信頼区間に当てはめ検定を行う
+
+        </li>
+    </ul>
 
     </main>
 {% endblock %}
