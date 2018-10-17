@@ -17,6 +17,7 @@ Vocabularies
             <thead>
             <tr>
                 <th>単語</th>
+                <th>カテゴリー</th>
                 <th>難易度</th>
                 <th>作成日</th>
             </tr>
@@ -25,6 +26,7 @@ Vocabularies
                 {% for vocabulary in vocabularies %}
                     <tr>
                     <td>{{ vocabulary.word }}</td>
+                    <td>{{ vocabulary.category }}</td>
                     <td>{{ vocabulary.level }}</td>
                     <td>{{ vocabulary.created_at }}</td>
                     </tr>
