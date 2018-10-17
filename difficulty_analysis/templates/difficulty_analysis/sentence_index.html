@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-Vocabularies
+Sentences
 {% endblock %}
 
 {% block metadata %}
@@ -16,17 +16,17 @@ Vocabularies
         <table>
             <thead>
             <tr>
-                <th>単語</th>
-                <th>難易度</th>
+                <th>テキスト</th>
+                <th>メモ</th>
                 <th>作成日</th>
             </tr>
             </thead>
             <tbody>
-                {% for vocabulary in vocabularies %}
+                {% for sentence in sentences %}
                     <tr>
-                    <td>{{ vocabulary.word }}</td>
-                    <td>{{ vocabulary.level }}</td>
-                    <td>{{ vocabulary.created_at }}</td>
+                    <td>{{ sentence.text }}</td>
+                    <td>{{ sentence.memo }}</td>
+                    <td>{{ sentence.created_at }}</td>
                     </tr>
                 {% endfor %}
             </tbody>

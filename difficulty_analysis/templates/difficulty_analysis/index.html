@@ -15,7 +15,13 @@ Difficulty Analysis
 {% block content %}
     <main class="content">
 
-        <a class="btn" href="{% url 'difficulty_analysis:vocabularies' %}">語彙/単語</a>
+        <li>
+            <a class="btn" href="{% url 'difficulty_analysis:vocabularies' %}">語彙/単語 一覧</a>
+        </li>
+        <li>
+            <a class="btn" href="{% url 'difficulty_analysis:sentences' %}">文章 一覧</a>
+        </li>
+
 
     </main>
 {% endblock %}
