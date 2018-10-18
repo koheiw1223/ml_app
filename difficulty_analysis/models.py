@@ -1,4 +1,5 @@
 from django.db import models
+import numpy as np
 
 class Tag(models.Model):
     name = models.CharField(max_length=32, verbose_name='タグ名')
@@ -25,5 +26,10 @@ class Sentence(models.Model):
 
     @classmethod
     def analysis(cls):
-        print("難易度分析 : ", cls.pk)
+        print("単語マッチ分析 : ", cls.pk)
+        return str("")
+
+    @classmethod
+    def analysis_tf_idf(cls):
+        print("TF-IDF分析 : ", cls.pk)
         return str("")

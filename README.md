@@ -30,3 +30,25 @@ $ python manage.py createsuperuser
 ```
 $ python manage.py startapp <app_name>
 ```
+
+
+### Clustering Analysis
+
+
+k-means
+
+グラフ理論
+
+確率分布
+
+Gaussian Mixture
+
+文章の指標化
+
+
+ - [Tf-idf](https://ja.wikipedia.org/wiki/Tf-idf)
+    - 文書中に含まれる単語の重要度を評価する手法の1つ
+    
+    tf-idfを利用して、文章の中に含まれる単語の重要度を上げる
+
+
