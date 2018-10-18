@@ -20,13 +20,22 @@ class VocabularyAdmin(admin.ModelAdmin):
 
 @admin.register(Sentence)
 class SentenceAdmin(admin.ModelAdmin):
-    list_display = ('text', 'memo', 'created_at', 'updated_at', 'used_status', 'analysis_actions')
+    list_display = ('text', 'memo', 'created_at', 'updated_at', 'used_status', 'analysis_action', 'tf_idf_action')
     pass
 
-    def analysis_actions(self, obj):
+    def analysis_action(self, obj):
         return format_html(
-            '<a class="button" href="{}">難易度分析</a>&nbsp;',
-            obj.analysis()
+            '<a class="button" href="{}">単語マッチ分析</a>&nbsp;',
+            obj.analysis(),
         )
+    analysis_action.short_description = ''
+    analysis_action.allow_tags = True
 
-    analysis_actions.short_description = 'Action'
+    def tf_idf_action(self, obj):
+        return format_html(
+            '<a class="button" href="{}">TF-IDF分析</a>&nbsp;',
+            obj.analysis_tf_idf(),
+        )
+    tf_idf_action.short_description = ''
+    tf_idf_action.allow_tags = True
+
