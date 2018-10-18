@@ -23,3 +23,7 @@ class Sentence(models.Model):
     updated_at = models.DateTimeField(auto_now=True, verbose_name='更新日')
     used_status = models.BooleanField(default=False, verbose_name='利用可否')
 
+    @classmethod
+    def analysis(cls):
+        print("難易度分析 : ", cls.pk)
+        return str("")

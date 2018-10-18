@@ -20,7 +20,6 @@ Sentences
                 <th>テキスト</th>
                 <th>メモ</th>
                 <th>作成日</th>
-                <th>分析</th>
             </tr>
             </thead>
             <tbody>
@@ -30,7 +29,6 @@ Sentences
                         <td>{{ sentence.text |truncatechars:20 }}</td>
                         <td>{{ sentence.memo |truncatechars:20 }}</td>
                         <td>{{ sentence.created_at }}</td>
-                        <td><button>レベル分析</button></td>
                     </tr>
                 {% endfor %}
             </tbody>
